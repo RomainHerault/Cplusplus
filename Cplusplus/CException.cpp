@@ -1,29 +1,36 @@
+#include "CException.h"
+
 #include <string>
 #include <vector>
 #include <list>
 #include <iostream>
 #include <assert.h>
-
-#include "CException.h"
-
-
-void CException::CException()
+/********************************************//**
+* \brief Constructeur par défaut
+***********************************************/
+CException::CException()
 {
+	//ctor
+	uiEXCValeur = 0;
 }
 
-void CException::CException(unsigned int uiVal)
+
+/********************************************//**
+* \brief Constructeur à 1 argument
+*
+* \param uiVal unsigned int la valeur de l'exception
+*
+***********************************************/
+CException::CException(unsigned int uiVal)
 {
+	//ctor
+	uiEXCValeur = uiVal;
 }
 
-void CException::~CException()
+/********************************************//**
+* \brief Destructeur
+***********************************************/
+CException::~CException()
 {
-}
-
-unsigned int CException::getuiEXCValeur()
-{
-	return 0;
-}
-
-void CException::setuiEXCValeur(unsigned int uiVal)
-{
+	//dtor
 }
